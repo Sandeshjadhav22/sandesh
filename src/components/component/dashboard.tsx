@@ -98,18 +98,16 @@ export function Dashboard() {
               <div className="space-y-2">
                 <div className="flex items-center justify-between">
                   <div>
-                    <h3 className="text-lg font-bold">Software Engineer</h3>
-                    <p className="text-gray-400">Acme Inc, 2019 - Present</p>
+                    <h3 className="text-lg font-bold">Tech Team member</h3>
+                    <p className="text-gray-400">Google Developer Student Club (GDSC), 2025 - Present</p>
                   </div>
                   <Badge>Current</Badge>
                 </div>
                 <p className="text-gray-400">
-                  Developed and maintained web applications using React,
-                  Node.js, and PostgreSQL. Collaborated with cross-functional
-                  teams to deliver high-quality software.
+                  Developed and maintained web applications using React for GDSC-Cloud Event
                 </p>
               </div>
-              <div className="space-y-2">
+              {/* <div className="space-y-2">
                 <div className="flex items-center justify-between">
                   <div>
                     <h3 className="text-lg font-bold">Intern</h3>
@@ -122,7 +120,7 @@ export function Dashboard() {
                   JavaScript and Ruby on Rails. Gained experience in front-end
                   and back-end development.
                 </p>
-              </div>
+              </div> */}
             </div>
             <div className="space-y-4">
               <h2 className="text-3xl font-bold">Education</h2>
@@ -130,18 +128,92 @@ export function Dashboard() {
                 <div className="flex items-center justify-between">
                   <div>
                     <h3 className="text-lg font-bold">
-                      Bachelor of Science in Computer Science
+                    Bachelor of Engineering in Computer Engineering
                     </h3>
                     <p className="text-gray-400">
-                      University of Example, 2015 - 2019
+                      University of Mumbai, 2021 - 2025
+                    </p>
+                  </div>
+                  <Badge>Current</Badge>
+                </div>
+              </div>
+              <div className="space-y-2">
+                <div className="flex items-center justify-between">
+                  <div>
+                    <h3 className="text-lg font-bold">
+                    HSC (Class XII)
+                    </h3>
+                    <p className="text-gray-400">
+                    M.H. High School & Junior College, Thane, India., 2019 - 2020
                     </p>
                   </div>
                   <Badge>Completed</Badge>
                 </div>
-                <p className="text-gray-400">
-                  Graduated with a 3.8 GPA and received the Deans List award for
-                  academic excellence.
-                </p>
+              </div>
+            </div>
+            {/* <div className="space-y-4">
+              <h2 className="text-3xl font-bold">Achievements</h2>
+              <div className="space-y-2">
+                <div className="flex items-center justify-between">
+                  <div>
+                    <h3 className="text-lg font-bold">
+                    Hackoverflow 2.0
+                    </h3>
+                    <p className="text-gray-400">
+                    Selected for 36-hour offline Hackoverflow 2.0 hackathon at PHCET, outperforming 700+ teams from across India.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div> */}
+          </div>
+        </section>
+        <section className="w-full py-12 md:py-24 lg:py-32 bg-gray-950 text-gray-50">
+          <div className="container px-4 md:px-6">
+            <div className="space-y-4 text-center">
+              <h2 className="text-3xl font-bold">Skills</h2>
+              <p className="text-gray-400 max-w-[700px] mx-auto">
+                Here are some of the key skills I have developed over the years:
+              </p>
+            </div>
+            <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-6 mt-8">
+            <div className="bg-gray-900 p-4 rounded-lg space-y-2">
+                <h3 className="text-lg font-bold">Language</h3>
+                <div className="flex flex-wrap gap-2">
+                  <Badge>C++</Badge>
+                  <Badge>JavaScript</Badge>
+                  <Badge>Typscript</Badge>
+                </div>
+              </div>
+              <div className="bg-gray-900 p-4 rounded-lg space-y-2">
+                <h3 className="text-lg font-bold">Front-end</h3>
+                <div className="flex flex-wrap gap-2">
+                  <Badge>React</Badge>
+                  <Badge>Nextjs</Badge>
+                  <Badge>HTML/CSS</Badge>
+                  <Badge>Tailwind Css</Badge>
+                  <Badge>ShadCn</Badge>
+                  <Badge>Redux Toolkit</Badge>
+                </div>
+              </div>
+              <div className="bg-gray-900 p-4 rounded-lg space-y-2">
+                <h3 className="text-lg font-bold">Back-end</h3>
+                <div className="flex flex-wrap gap-2">
+                  <Badge>Node.js</Badge>
+                  <Badge>Express</Badge>
+                  <Badge>MongoDb</Badge>
+                  <Badge>mongoose</Badge>
+                  <Badge>PostgreSQL</Badge>
+                </div>
+              </div>
+              <div className="bg-gray-900 p-4 rounded-lg space-y-2">
+                <h3 className="text-lg font-bold">Tools</h3>
+                <div className="flex flex-wrap gap-2">
+                  <Badge>Git</Badge>
+                  <Badge>GitHub</Badge>
+                  <Badge>Figma</Badge>
+                  <Badge>Vs Code</Badge>
+                </div>
               </div>
             </div>
           </div>
