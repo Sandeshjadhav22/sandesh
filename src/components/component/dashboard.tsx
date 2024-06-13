@@ -1,72 +1,18 @@
 "use client";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
-import {
-  NavigationMenuLink,
-  NavigationMenuItem,
-  NavigationMenuList,
-  NavigationMenu,
-} from "@/components/ui/navigation-menu";
 import { Badge } from "@/components/ui/badge";
 import { CardContent, Card } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import Image from "next/image";
 import { motion } from "framer-motion";
+import Navbar from "./Navbar";
 
 export function Dashboard() {
   return (
     <div className="flex flex-col min-h-[100dvh] bg-gray-950 text-gray-50 scrollbar scrollbar-thumb-rose-500">
-      <header className="px-4 lg:px-6 h-14 flex items-center justify-between bg-gray-900">
-        <Link className="flex items-center gap-2" href="#">
-          <span className="text-xl font-bold text-gray-50">sandesh Jadhav</span>
-        </Link>
-        <div className="flex items-center gap-4 md:hidden">
-          <Button
-            className="rounded-full text-gray-50"
-            size="icon"
-            variant="ghost"
-          >
-            <span className="sr-only">Toggle navigation</span>
-          </Button>
-        </div>
-        <NavigationMenu className="hidden md:flex">
-          <NavigationMenuList>
-            <NavigationMenuItem>
-              <NavigationMenuLink
-                className="px-4 py-2 rounded-md hover:bg-gray-800"
-                href="#"
-              >
-                Home
-              </NavigationMenuLink>
-            </NavigationMenuItem>
-            <NavigationMenuItem>
-              <NavigationMenuLink
-                className="px-4 py-2 rounded-md hover:bg-gray-800"
-                href="#"
-              >
-                Experience
-              </NavigationMenuLink>
-            </NavigationMenuItem>
-            <NavigationMenuItem>
-              <NavigationMenuLink
-                className="px-4 py-2 rounded-md hover:bg-gray-800"
-                href="#"
-              >
-                Projects
-              </NavigationMenuLink>
-            </NavigationMenuItem>
-            <NavigationMenuItem>
-              <NavigationMenuLink
-                className="px-4 py-2 rounded-md hover:bg-gray-800"
-                href="#"
-              >
-                Contact
-              </NavigationMenuLink>
-            </NavigationMenuItem>
-          </NavigationMenuList>
-        </NavigationMenu>
-      </header>
+      <Navbar/>
       <main className="flex-1 bg-gray-950 text-gray-50">
         <section className="w-full py-12 md:py-24 lg:py-32">
           <div className="container px-4 md:px-6 grid md:grid-cols-2 gap-8 items-center">
