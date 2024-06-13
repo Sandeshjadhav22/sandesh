@@ -15,7 +15,7 @@ import Image from "next/image";
 
 export function Dashboard() {
   return (
-    <div className="flex flex-col min-h-[100dvh] bg-gray-950 text-gray-50">
+    <div className="flex flex-col min-h-[100dvh] bg-gray-950 text-gray-50 scrollbar scrollbar-thumb-rose-500">
       <header className="px-4 lg:px-6 h-14 flex items-center justify-between bg-gray-900">
         <Link className="flex items-center gap-2" href="#">
           <BriefcaseIcon className="h-6 w-6 text-gray-50" />
