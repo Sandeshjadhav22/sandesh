@@ -12,6 +12,7 @@ import { CardContent, Card } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import Image from "next/image";
+import { motion } from "framer-motion";
 
 export function Dashboard() {
   return (
@@ -72,23 +73,48 @@ export function Dashboard() {
         <section className="w-full py-12 md:py-24 lg:py-32">
           <div className="container px-4 md:px-6 grid md:grid-cols-2 gap-8 items-center">
             <div className="space-y-4">
-              <h1 className="text-4xl font-bold">Hi, I&apos;m Sandesh Jadhav</h1>
-              <p className="text-gray-400 text-lg">
-                I&apos;m a full-stack developer with a passion for building beautiful
-                and functional web applications.
-              </p>
-              <div className="flex gap-4">
+              <motion.h1
+                initial={{ opacity: 0, y: 100 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.1 }}
+                className="text-4xl font-bold"
+              >
+                Hi, I&apos;m Sandesh Jadhav
+              </motion.h1>
+
+              <motion.p
+                initial={{ opacity: 0, y: 100 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.2 }}
+                className="text-gray-400 text-lg"
+              >
+                I&apos;m a full-stack developer with a passion for building
+                beautiful and functional web applications.
+              </motion.p>
+
+              <motion.div
+                initial={{ opacity: 0, y: 100 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.3 }}
+                className="flex gap-4"
+              >
                 <Button>View Resume</Button>
                 <Button variant="secondary">Contact Me</Button>
-              </div>
+              </motion.div>
             </div>
-            <Image
-              alt="Hero"
-              className="mx-auto aspect-square overflow-hidden rounded-xl object-cover object-center"
-              height="550"
-              src="/hero.jpg"
-              width="550"
-            />
+            <motion.div
+              initial={{ opacity: 0, x: 100 }}
+              animate={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.2 }}
+            >
+              <Image
+                alt="Hero"
+                className="mx-auto aspect-square overflow-hidden rounded-xl object-cover object-center"
+                height="550"
+                src="/hero.jpg"
+                width="550"
+              />
+            </motion.div>
           </div>
         </section>
         <section className="w-full py-12 md:py-24 lg:py-32 bg-gray-800">
@@ -99,12 +125,15 @@ export function Dashboard() {
                 <div className="flex items-center justify-between">
                   <div>
                     <h3 className="text-lg font-bold">Tech Team member</h3>
-                    <p className="text-gray-400">Google Developer Student Club (GDSC), 2025 - Present</p>
+                    <p className="text-gray-400">
+                      Google Developer Student Club (GDSC), 2025 - Present
+                    </p>
                   </div>
                   <Badge>Current</Badge>
                 </div>
                 <p className="text-gray-400">
-                  Developed and maintained web applications using React for GDSC-Cloud Event
+                  Developed and maintained web applications using React for
+                  GDSC-Cloud Event
                 </p>
               </div>
               {/* <div className="space-y-2">
@@ -128,7 +157,7 @@ export function Dashboard() {
                 <div className="flex items-center justify-between">
                   <div>
                     <h3 className="text-lg font-bold">
-                    Bachelor of Engineering in Computer Engineering
+                      Bachelor of Engineering in Computer Engineering
                     </h3>
                     <p className="text-gray-400">
                       University of Mumbai, 2021 - 2025
@@ -140,11 +169,10 @@ export function Dashboard() {
               <div className="space-y-2">
                 <div className="flex items-center justify-between">
                   <div>
-                    <h3 className="text-lg font-bold">
-                    HSC (Class XII)
-                    </h3>
+                    <h3 className="text-lg font-bold">HSC (Class XII)</h3>
                     <p className="text-gray-400">
-                    M.H. High School & Junior College, Thane, India., 2019 - 2020
+                      M.H. High School & Junior College, Thane, India., 2019 -
+                      2020
                     </p>
                   </div>
                   <Badge>Completed</Badge>
@@ -177,7 +205,7 @@ export function Dashboard() {
               </p>
             </div>
             <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-6 mt-8">
-            <div className="bg-gray-900 p-4 rounded-lg space-y-2">
+              <div className="bg-gray-900 p-4 rounded-lg space-y-2">
                 <h3 className="text-lg font-bold">Language</h3>
                 <div className="flex flex-wrap gap-2">
                   <Badge>C++</Badge>
