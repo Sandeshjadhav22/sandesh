@@ -45,7 +45,7 @@ const Hero = () => {
                 className="flex gap-4"
               >
                 <Button>View Resume</Button>
-                <Button variant="secondary">Contact Me</Button>
+                <Button onClick={() => window.open("mailto:sandeshjadhav2002@gmail.com")} variant="secondary">Contact Me</Button>
               </motion.div>
             </div>
             <motion.div
