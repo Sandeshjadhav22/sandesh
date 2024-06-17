@@ -1,6 +1,19 @@
 import { motion } from "framer-motion";
 import { Button } from "../ui/button";
 import Image from "next/image";
+
+const slap = {
+  initial: {
+    opacity: 0,
+    scale: 1.1,
+  },
+  whileInView: { opacity: 1, scale: 1 },
+  transition: {
+    duration: 0.5,
+    ease: "easeInOut",
+  },
+  viewport: { once: true },
+};
 const Hero = () => {
   return (
     <section className="w-full py-12 md:py-24 lg:py-32">
@@ -9,7 +22,7 @@ const Hero = () => {
               <motion.h1
                 initial={{ opacity: 0, y: 100 }}
                 animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.1 }}
+                transition={{ duration: 0.1 , ease:"easeInOut"}}
                 className="text-4xl font-bold"
               >
                 Hi, I&apos;m Sandesh Jadhav
@@ -36,9 +49,10 @@ const Hero = () => {
               </motion.div>
             </div>
             <motion.div
-              initial={{ opacity: 0, x: 100 }}
-              animate={{ opacity: 1, x: 0 }}
-              transition={{ duration: 0.2 }}
+               {...{
+                ...slap,
+                transition: { ...slap.transition, delay: 0.35 },
+              }}
             >
               <Image
                 alt="Hero"
