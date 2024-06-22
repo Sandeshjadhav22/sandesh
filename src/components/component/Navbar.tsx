@@ -30,7 +30,7 @@ const Navbar = () => {
         <NavigationMenuItem>
           <NavigationMenuLink
             className="px-4 py-2 rounded-md hover:bg-gray-800"
-            href="#"
+            href="#Experience"
           >
             Experience
           </NavigationMenuLink>
@@ -38,7 +38,7 @@ const Navbar = () => {
         <NavigationMenuItem>
           <NavigationMenuLink
             className="px-4 py-2 rounded-md hover:bg-gray-800"
-            href="#"
+            href="#Projects"
           >
             Projects
           </NavigationMenuLink>
@@ -46,7 +46,7 @@ const Navbar = () => {
         <NavigationMenuItem>
           <NavigationMenuLink
             className="px-4 py-2 rounded-md hover:bg-gray-800"
-            href="#"
+            href="#Contact"
           >
             Contact
           </NavigationMenuLink>

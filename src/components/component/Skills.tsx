@@ -2,7 +2,7 @@ import { Badge } from "../ui/badge"
 
 const Skills = () => {
   return (
-    <section className="w-full py-12 md:py-24 lg:py-32 bg-gray-950 text-gray-50">
+    <section id="Skills" className="w-full py-12 md:py-24 lg:py-32 bg-gray-950 text-gray-50">
           <div className="container px-4 md:px-6">
             <div className="space-y-4 text-center">
               <h2 className="text-3xl font-bold">Skills</h2>

@@ -12,31 +12,31 @@ const Footer = () => {
             <Link className="text-gray-400 hover:text-gray-50" href="#">
               Resume
             </Link>
-            <Link className="text-gray-400 hover:text-gray-50" href="#">
+            <Link className="text-gray-400 hover:text-gray-50" href="#Skills">
               Skills
             </Link>
           </div>
           <div className="grid gap-1">
             <h3 className="font-semibold">Projects</h3>
-            <Link className="text-gray-400 hover:text-gray-50" href="#">
-              Web Apps
+            <Link className="text-gray-400 hover:text-gray-50" href="#Projects">
+              Movix
             </Link>
-            <Link className="text-gray-400 hover:text-gray-50" href="#">
-              Mobile Apps
+            <Link className="text-gray-400 hover:text-gray-50" href="#Projects">
+            SandyCare
             </Link>
-            <Link className="text-gray-400 hover:text-gray-50" href="#">
-              Data Visualizations
+            <Link className="text-gray-400 hover:text-gray-50" href="#Projects">
+            Elib
             </Link>
           </div>
           <div className="grid gap-1">
             <h3 className="font-semibold">Contact</h3>
-            <Link className="text-gray-400 hover:text-gray-50" href="#">
+            <Link className="text-gray-400 hover:text-gray-50" href="mailto:sandeshjadhav2002@gmail.com" target="_blank">
               Email
             </Link>
-            <Link className="text-gray-400 hover:text-gray-50" href="#">
+            <Link className="text-gray-400 hover:text-gray-50" href="https://www.linkedin.com/in/sandesh-jadhav-183b60218/" target="_blank">
               LinkedIn
             </Link>
-            <Link className="text-gray-400 hover:text-gray-50" href="#">
+            <Link className="text-gray-400 hover:text-gray-50" href="https://github.com/Sandeshjadhav22" target="_blank">
               GitHub
             </Link>
           </div>
@@ -51,13 +51,13 @@ const Footer = () => {
           </div>
           <div className="grid gap-1">
             <h3 className="font-semibold">Follow</h3>
-            <Link className="text-gray-400 hover:text-gray-50" href="#">
+            <Link className="text-gray-400 hover:text-gray-50" href="https://twitter.com/SandeshSanjayj2" target="_blank">
               Twitter
             </Link>
-            <Link className="text-gray-400 hover:text-gray-50" href="#">
+            <Link className="text-gray-400 hover:text-gray-50" href="https://instagram.com/sandeshhh.17" target="_blank">
               Instagram
             </Link>
-            <Link className="text-gray-400 hover:text-gray-50" href="#">
+            <Link className="text-gray-400 hover:text-gray-50" href="https://www.youtube.com/channel/UCzIz4N9aRlz5_rkXuCLV52Q" target="_blank">
               YouTube
             </Link>
           </div>

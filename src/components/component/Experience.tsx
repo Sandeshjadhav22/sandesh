@@ -2,7 +2,7 @@ import { Badge } from "../ui/badge"
 
 const Experience = () => {
   return (
-    <section className="w-full py-12 md:py-24 lg:py-32 bg-gray-800">
+    <section id="Experience" className="w-full py-12 md:py-24 lg:py-32 bg-gray-800">
           <div className="container px-4 md:px-6 grid md:grid-cols-2 gap-8">
             <div className="space-y-4">
               <h2 className="text-3xl font-bold">Work Experience</h2>
