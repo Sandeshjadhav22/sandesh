@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import { Button } from "../ui/button";
 import Image from "next/image";
+import Link from "next/link";
 
 const slap = {
   initial: {
@@ -44,7 +45,8 @@ const Hero = () => {
                 transition={{ duration: 0.3 }}
                 className="flex gap-4"
               >
-                <Button>View Resume</Button>
+               
+                <Link href="https://drive.google.com/file/d/1KV9A9tVzWj42-x0choHcoP4IC4v3-yWP/view?usp=sharing" target="_blank"> <Button>View Resume</Button></Link>
                 <Button onClick={() => window.open("mailto:sandeshjadhav2002@gmail.com")} variant="secondary">Contact Me</Button>
               </motion.div>
             </div>
