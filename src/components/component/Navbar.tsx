@@ -4,11 +4,11 @@ import { NavigationMenu, NavigationMenuItem, NavigationMenuLink, NavigationMenuL
 
 const Navbar = () => {
   return (
-    <header className="px-4 lg:px-6 h-14 flex items-center justify-between bg-gray-900">
-    <Link className="flex items-center gap-2" href="#">
+    <header className="px-4 lg:px-6 h-14 flex items-center justify-center  bg-gray-900">
+    {/* <Link className="flex items-center gap-2" href="#">
       <span className="text-xl font-bold text-gray-50">sandesh Jadhav</span>
-    </Link>
-    <div className="flex items-center gap-4 md:hidden">
+    </Link> */}
+    <div className="flex items-center md:hidden">
       <Button
         className="rounded-full text-gray-50"
         size="icon"
@@ -21,7 +21,7 @@ const Navbar = () => {
       <NavigationMenuList>
         <NavigationMenuItem>
           <NavigationMenuLink
-            className="px-4 py-2 rounded-md hover:bg-gray-800"
+            className="px-7 py-2 rounded-md hover:bg-gray-800"
             href="#"
           >
             Home
@@ -29,7 +29,7 @@ const Navbar = () => {
         </NavigationMenuItem>
         <NavigationMenuItem>
           <NavigationMenuLink
-            className="px-4 py-2 rounded-md hover:bg-gray-800"
+            className="px-7 py-2 rounded-md hover:bg-gray-800"
             href="#Experience"
           >
             Experience
@@ -37,7 +37,7 @@ const Navbar = () => {
         </NavigationMenuItem>
         <NavigationMenuItem>
           <NavigationMenuLink
-            className="px-4 py-2 rounded-md hover:bg-gray-800"
+            className="px-7 py-2 rounded-md hover:bg-gray-800"
             href="#Projects"
           >
             Projects
@@ -45,7 +45,7 @@ const Navbar = () => {
         </NavigationMenuItem>
         <NavigationMenuItem>
           <NavigationMenuLink
-            className="px-4 py-2 rounded-md hover:bg-gray-800"
+            className="px-7 py-2 rounded-md hover:bg-gray-800"
             href="#Contact"
           >
             Contact
