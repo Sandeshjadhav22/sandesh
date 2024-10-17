@@ -1,8 +1,17 @@
 import Link from "next/link"
 import { Button } from "../ui/button"
 import { NavigationMenu, NavigationMenuItem, NavigationMenuLink, NavigationMenuList } from "../ui/navigation-menu"
+import useSmoothScroll from "@/hooks/useSmoothScroll"
 
 const Navbar = () => {
+   
+  const scrollToSection = useSmoothScroll();
+
+  const handleNavClick = (e: React.MouseEvent<HTMLAnchorElement>, sectionId: string):void => {
+    e.preventDefault();
+    scrollToSection(sectionId);
+  }
+
   return (
     <header className="px-4 lg:px-6 h-14 flex items-center justify-center  bg-gray-900">
     {/* <Link className="flex items-center gap-2" href="#">
@@ -23,6 +32,7 @@ const Navbar = () => {
           <NavigationMenuLink
             className="px-7 py-2 rounded-md hover:bg-gray-800"
             href="#"
+            onClick={(e:React.MouseEvent<HTMLAnchorElement>) => handleNavClick(e, 'home')}
           >
             Home
           </NavigationMenuLink>
@@ -31,6 +41,7 @@ const Navbar = () => {
           <NavigationMenuLink
             className="px-7 py-2 rounded-md hover:bg-gray-800"
             href="#Experience"
+            onClick={(e: React.MouseEvent<HTMLAnchorElement>) => handleNavClick(e, 'Experience')}
           >
             Experience
           </NavigationMenuLink>
@@ -39,6 +50,7 @@ const Navbar = () => {
           <NavigationMenuLink
             className="px-7 py-2 rounded-md hover:bg-gray-800"
             href="#Projects"
+            onClick={(e: React.MouseEvent<HTMLAnchorElement>) => handleNavClick(e, 'Projects')}
           >
             Projects
           </NavigationMenuLink>
@@ -47,6 +59,7 @@ const Navbar = () => {
           <NavigationMenuLink
             className="px-7 py-2 rounded-md hover:bg-gray-800"
             href="#Contact"
+            onClick={(e: React.MouseEvent<HTMLAnchorElement>) => handleNavClick(e, 'Contact')}
           >
             Contact
           </NavigationMenuLink>
