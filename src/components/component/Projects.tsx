@@ -4,6 +4,7 @@ import { Badge } from "../ui/badge";
 import { Github, SquareArrowOutUpRight } from "lucide-react";
 import Link from "next/link";
 
+
 const projects = [
   {
     id: 1,
@@ -33,7 +34,7 @@ const projects = [
     githubLink: "https://github.com/Sandeshjadhav22/elib-client",
     deployLink: "https://github.com/Sandeshjadhav22/elib-client",
     image: "/elib.jpg",
-    tech: ["Nextjs", "Node", "Typescript", "Express", "JWT", "Router"],
+    tech: ["Nextjs", "Node", "Typescript", "JWT", "Router"],
   },
   {
     id: 4,
