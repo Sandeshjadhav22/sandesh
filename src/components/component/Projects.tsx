@@ -60,10 +60,10 @@ const Projects = () => {
             my skills in web development, design, and problem solving.
           </p>
         </div>
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mt-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-9 mt-8">
           {projects.map((project) => {
             return (
-              <Card key={project.id} className="bg-gray-900 text-gray-50">
+              <Card key={project.id} className="bg-gray-900 text-gray-50  transition ease-in-out delay-80 hover:-translate-y-1 hover:scale-105 duration-300 ">
                 <Image
                   alt={project.name}
                   className="aspect-video overflow-hidden rounded-t-xl object-cover object-center"
@@ -80,19 +80,19 @@ const Projects = () => {
                       <div>
                         {" "}
                         <Link href={project.githubLink} target="_blank">
-                          <Github />
+                          <Github className="hover:text-gray-500" />
                         </Link>
                       </div>
                       <div>
                         {" "}
                         <Link href={project.deployLink} target="_blank">
-                          <SquareArrowOutUpRight />
+                          <SquareArrowOutUpRight  className="hover:text-gray-500"/>
                         </Link>
                       </div>
                     </div>
                   </div>
                   <p className="text-gray-400">{project.description}</p>
-                  <div className="flex gap-2">
+                  <div className="flex gap-2 overflow-auto">
                     {project.tech.map((tech, index) => {
                       return (
                         <Badge className="bg-slate-800" key={index}>
