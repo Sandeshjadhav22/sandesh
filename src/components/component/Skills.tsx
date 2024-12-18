@@ -16,7 +16,7 @@ const Skills = () => {
                 <div className="flex flex-wrap gap-2">
                   <Badge>C++</Badge>
                   <Badge>JavaScript</Badge>
-                  <Badge>Typscript</Badge>
+                  <Badge>Typescript</Badge>
                 </div>
               </div>
               <div className="bg-gray-900 p-4 rounded-lg space-y-2">

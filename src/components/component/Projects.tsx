@@ -18,7 +18,7 @@ const projects = [
   },
   {
     id: 2,
-    name: "SandyCare",
+    name: "CareHub",
     description:
       "A Fullstack web app that helps users to get appoinments for consultaions and progress.",
     githubLink: "https://github.com/Sandeshjadhav22/Hospital-management",
