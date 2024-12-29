@@ -51,7 +51,7 @@ const projects = [
     description: "Secure API Key Management for Developers.",
     githubLink: "https://github.com/Sandeshjadhav22/apivalut",
     deployLink: "https://apivalut.vercel.app/",
-    image: "/apiVault.jpg",
+    image: "/ApiVault.jpg",
     tech: ["Nextjs", "ShadCn", "Typescript", "Zod","JWT"],
   },
 ];
