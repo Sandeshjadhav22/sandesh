@@ -45,6 +45,15 @@ const projects = [
     image: "/zscrum.jpg",
     tech: ["Nextjs", "ShadCn", "Javascript", "Zod"],
   },
+  {
+    id: 5,
+    name: "ApiVault",
+    description: "Secure API Key Management for Developers.",
+    githubLink: "https://github.com/Sandeshjadhav22/apivalut",
+    deployLink: "https://apivalut.vercel.app/",
+    image: "/apivault.jpg",
+    tech: ["Nextjs", "ShadCn", "Typescript", "Zod","JWT"],
+  },
 ];
 
 const Projects = () => {
