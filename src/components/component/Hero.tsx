@@ -48,7 +48,7 @@ const Hero = () => {
             className="flex gap-4"
           >
             <Link
-              href="https://drive.google.com/file/d/18i8zNTieohctkAeTG3h7oVqnRHD1zIKV/view?usp=sharing"
+              href="https://drive.google.com/file/d/1UzuA2bDaTUkStq57iqjKnP_noyA0AQ70/view?usp=sharing"
               target="_blank"
             >
               {" "}
