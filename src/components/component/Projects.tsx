@@ -4,10 +4,39 @@ import { Badge } from "../ui/badge";
 import { Github, SquareArrowOutUpRight } from "lucide-react";
 import Link from "next/link";
 
-
 const projects = [
   {
     id: 1,
+    name: "Ollama-GPT",
+    description:
+      "Developed a chat LLM (Gemma:2b), enabling message streaming, chat management, and persistent storage.",
+    githubLink: "https://github.com/Sandeshjadhav22/Ollama-chat-client",
+    deployLink: "https://github.com/Sandeshjadhav22/Ollama-chat-client",
+    image: "/ollama-client.png",
+    tech: ["Typescript", "Nodejs", "Ollama:2b", "postgreSql"],
+  },
+
+  {
+    id: 2,
+    name: "ControlHub.AI",
+    description:
+      "Developed a TypeScript-based smart light control server using Model Context Protocol (MCP) for seamless interaction",
+    githubLink: "https://github.com/Sandeshjadhav22/ControlHub-Ai",
+    deployLink: "https://github.com/Sandeshjadhav22/ControlHub-Ai",
+    image: "/controlhub.png",
+    tech: ["Typescript", "Nodejs", "MCP"],
+  },
+   {
+    id: 3,
+    name: "ApiVault",
+    description: "Secure API Key Management for Developers.",
+    githubLink: "https://github.com/Sandeshjadhav22/apivalut",
+    deployLink: "https://apivalut.vercel.app/",
+    image: "/ApiVault.jpg",
+    tech: ["Nextjs", "ShadCn", "Typescript", "Zod", "JWT"],
+  },
+  {
+    id: 4,
     name: "Movix",
     description:
       "A web application that allows users to discover millions of Tvs and shows.",
@@ -16,18 +45,9 @@ const projects = [
     image: "/movix.jpg",
     tech: ["React", "Axios", "React-redux"],
   },
+
   {
-    id: 2,
-    name: "CareHub",
-    description:
-      "A Fullstack web app that helps users to get appoinments for consultaions and progress.",
-    githubLink: "https://github.com/Sandeshjadhav22/Hospital-management",
-    deployLink: "https://hospital-management-frontend-ashy.vercel.app/",
-    image: "/hospital.jpg",
-    tech: ["React", "Node", "Express", "Axios", "JWT", "Express"],
-  },
-  {
-    id: 3,
+    id: 5,
     name: "Elib",
     description:
       "A Fullstack web-based dashboard that manage & store Books like a library.",
@@ -37,7 +57,7 @@ const projects = [
     tech: ["Nextjs", "Node", "Typescript", "JWT", "Router"],
   },
   {
-    id: 4,
+    id: 6,
     name: "Zscrum",
     description: "A Fullstack project management solution.",
     githubLink: "https://github.com/Sandeshjadhav22/scrum",
@@ -45,14 +65,17 @@ const projects = [
     image: "/zscrum.jpg",
     tech: ["Nextjs", "ShadCn", "Javascript", "Zod"],
   },
+ 
+
   {
-    id: 5,
-    name: "ApiVault",
-    description: "Secure API Key Management for Developers.",
-    githubLink: "https://github.com/Sandeshjadhav22/apivalut",
-    deployLink: "https://apivalut.vercel.app/",
-    image: "/ApiVault.jpg",
-    tech: ["Nextjs", "ShadCn", "Typescript", "Zod","JWT"],
+    id: 7,
+    name: "CareHub",
+    description:
+      "A Fullstack web app that helps users to get appoinments for consultaions and progress.",
+    githubLink: "https://github.com/Sandeshjadhav22/Hospital-management",
+    deployLink: "https://hospital-management-frontend-ashy.vercel.app/",
+    image: "/hospital.jpg",
+    tech: ["React", "Node", "Express", "Axios", "JWT", "Express"],
   },
 ];
 
@@ -73,7 +96,10 @@ const Projects = () => {
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-9 mt-8">
           {projects.map((project) => {
             return (
-              <Card key={project.id} className="bg-gray-900 text-gray-50  transition ease-in-out delay-80 hover:-translate-y-1 hover:scale-105 duration-300 ">
+              <Card
+                key={project.id}
+                className="bg-gray-900 text-gray-50  transition ease-in-out delay-80 hover:-translate-y-1 hover:scale-105 duration-300 "
+              >
                 <Image
                   alt={project.name}
                   className="aspect-video overflow-hidden rounded-t-xl object-cover object-center"
@@ -96,7 +122,7 @@ const Projects = () => {
                       <div>
                         {" "}
                         <Link href={project.deployLink} target="_blank">
-                          <SquareArrowOutUpRight  className="hover:text-gray-500"/>
+                          <SquareArrowOutUpRight className="hover:text-gray-500" />
                         </Link>
                       </div>
                     </div>

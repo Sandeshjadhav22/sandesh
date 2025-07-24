@@ -37,8 +37,7 @@ const Hero = () => {
             transition={{ duration: 0.2 }}
             className="text-gray-400 text-lg"
           >
-            I&apos;m a full-stack developer with a passion for building
-            beautiful and functional web applications.
+            I&apos;m an AI enthusiast and full-stack developer passionate about building intelligent systems and GenAI applications. From LLM-powered chatbots to real-time automation tools, I love turning ideas into powerful AI-driven products.
           </motion.p>
 
           <motion.div
@@ -48,7 +47,7 @@ const Hero = () => {
             className="flex gap-4"
           >
             <Link
-              href="https://drive.google.com/file/d/1UzuA2bDaTUkStq57iqjKnP_noyA0AQ70/view?usp=sharing"
+              href="https://drive.google.com/file/d/1sDhVru97blZJH4rEwzIndWXXKqTTNxB9/view?usp=sharing"
               target="_blank"
             >
               {" "}
